@@ -1,1 +1,1 @@
-# Practice-Javascpipt
+# Practice-Javascipt
