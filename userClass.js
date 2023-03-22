@@ -5,13 +5,13 @@ class commonValue {
         this._incomeTax = 1000;
     }
     get name() {
-        return this._name;
+        return {name : this._name};
     }
     get age() {
-        return this._age;
+        return {age : this._age};
     }
     takeincome(salary) {
-        return salary-this._incomeTax;
+        return {salary : salary-this._incomeTax};
     }
 }
 
@@ -24,15 +24,18 @@ class commonValue {
             return this._salary;
         }
     }
-    const personTitle = new person('Title', '24')
+    const personTitle = new person('Title', 24)
 
 
 console.log(personTitle.name)
 console.log(personTitle.age)
 console.log(personTitle.takeincome(15000))
 
+    const personKirito = new person('Kirito', 124)
 
-
+console.log(personKirito.name)
+console.log(personKirito.age)
+console.log(personKirito.takeincome(20000))
 
 
 
